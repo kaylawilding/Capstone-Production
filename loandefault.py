@@ -1,19 +1,10 @@
 import pandas as pd
 import numpy as np 
-import matplotlib.pyplot as plt
-import seaborn as sns
 from scipy.stats import zscore
-from sklearn.model_selection import train_test_split, GridSearchCV, RandomizedSearchCV
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.preprocessing import StandardScaler
 from sklearn.compose import make_column_transformer, make_column_selector
 from xgboost import XGBClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import KFold
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import recall_score
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.tree import plot_tree
-import matplotlib.pyplot as plt
 import pickle
 from transformode import DataFrameOneHotEncoder 
 
@@ -77,5 +68,5 @@ pickle.dump(grid_search.best_estimator_, open("xgb_model.pickle", "wb"))
 
 # make predictions for test data
 y_pred = best_xgb_model.predict(test_X)
-predictions = [round(value) for value in y_pred]s
+predictions = [round(value) for value in y_pred]
 
