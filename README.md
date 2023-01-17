@@ -12,3 +12,6 @@ Verify that the new environment was installed correctly:
 
 conda env list
 You can also use conda info --envs
+
+For updating the enviroment use 
+$ conda env update --loandefault ./env --file environment.yml  --prune
