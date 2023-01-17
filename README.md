@@ -14,4 +14,4 @@ conda env list
 You can also use conda info --envs
 
 For updating the enviroment use 
-$ conda env update --loandefault ./env --file environment.yml  --prune
+conda env update --prefix ./env --file environment.yml  --prune

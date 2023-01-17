@@ -9,7 +9,7 @@ import pickle
 from transformode import DataFrameOneHotEncoder 
 
 
-loan_df = pd.read_csv('Raw Data/Loan_Default.csv')
+loan_df = pd.read_csv('./data/Loan_Default.csv')
 
 y = loan_df['Status']
 loan_df = loan_df.drop(columns=['Status', 'ID', 'rate_of_interest','Interest_rate_spread', 'Upfront_charges'])
