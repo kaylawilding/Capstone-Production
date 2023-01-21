@@ -40,9 +40,13 @@ test_X.columns = test_X.columns.str.replace("[>]", "greater_than")
 
 # fit model on training data
 parameters = {
-    'max_depth': range (2, 10, 1),
-    'n_estimators': range(60, 220, 40),
-    'learning_rate': [0.1, 0.01, 0.05]
+    #'max_depth': range (2, 10, 1),
+    #'n_estimators': range(60, 220, 40),
+    #'learning_rate': [0.1, 0.01, 0.05]
+    #Just limiting the options for testing production flow speed
+    'max_depth': range(6, 8, 1),
+    'n_estimators': range(180, 220, 40),
+    'learning_rate': [0.1]
 }
 xgbmodel = XGBClassifier(
     objective= 'binary:logistic',
