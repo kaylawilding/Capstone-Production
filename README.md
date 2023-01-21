@@ -1,6 +1,6 @@
 # Capstone-Production
 
-To run: 
+To run the training file and to re-create the model:
 
 1. Create or update the environment from the environment.yml file:
 
@@ -17,9 +17,12 @@ To run:
         Mac: python loandefault.py
     
         PC: py loandefault.py
-
-
+        
 Or you can run through docker in the command line using the Docker Instructions.rtf file. 
 
-You can see how to use the API where you could input new data and get loan default predictions using the run_api notebook or python file (same content in two file types)
+There is an API provided where you can input a dataset of loan applications and predict their default status as output. You can see an example of how to use the API in the run_api notebook/python file (same content in two file types).
+
+
+
+
 
