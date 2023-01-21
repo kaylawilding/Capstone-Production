@@ -17,3 +17,9 @@ To run:
         Mac: python loandefault.py
     
         PC: py loandefault.py
+
+
+Or you can run through docker in the command line using the Docker Instructions.rtf file. 
+
+You can see how to use the API where you could input new data and get loan default predictions using the run_api notebook or python file (same content in two file types)
+
