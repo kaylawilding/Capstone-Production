@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Load data
-df_test_X =pd.read_csv('./testX.csv')
+df_test_X =pd.read_csv('./data/testX.csv')
 
 X_test = df_test_X.to_numpy()
 
@@ -18,7 +18,7 @@ y_predict = np.array(y_predict)
 y_predict = pd.DataFrame(y_predict)
 print(y_predict)
 
-test_y = pd.read_csv('./testy.csv')
+test_y = pd.read_csv('./data/testy.csv')
 test_y = pd.DataFrame(test_y['Status'])
 
 accuracy = accuracy_score(test_y, y_predict)
